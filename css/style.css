@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    color: #222;
+
+    background-color: #ffffff;
+    
+    overflow-x:hidden;
+    
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1f3a;
+    color: white;
+}
+
+   
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 48px;
+    color: #c9a227;
+    letter-spacing: 3px;
+}
+
+.logo p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+}
+
+
+/* MENU */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color:#c9a227;
+}
+
+
+/* BANNER */
+
+.banner {
+
+    height: 70vh;
+
+    background:
+    linear-gradient(
+    rgba(11,31,58,0.65),
+    rgba(11,31,58,0.65)
+    ),
+    url("../images/casa.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+
+.banner-texto h2 {
+
+    font-size: 42px;
+    max-width: 700px;
+
+}
+
+
+.banner-texto p {
+
+    font-size: 22px;
+    margin: 20px 0;
+
+}
+
+
+.botao {
+
+    display: inline-block;
+    padding: 15px 30px;
+
+    background-color: #c9a227;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+}
+
+
+/* SOBRE */
+
+.sobre {
+
+    padding: 60px 10%;
+    text-align: center;
+
+}
+
+
+.sobre h2 {
+
+    color: #0b1f3a;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+
+.sobre p {
+
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+
+    padding: 60px 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+
+}
+
+
+.servicos h2 {
+
+    color: #0b1f3a;
+    margin-bottom: 40px;
+
+}
+
+
+.cards {
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+.cards div {
+
+    background:white;
+    padding:30px;
+    width:300px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1)
+
+}
+
+
+.cards h3 {
+
+    color:#c9a227;
+    margin-bottom:15px;
+
+}
+
+
+/* RODAPÉ */
+
+footer {
+
+    background:#0b1f3a;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(11,31,58,0.75), rgba(11,31,58,0.75)),
+    url("../images/banner.jpg") center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.botao {
+    display: inline-block;
+    background: #c9a227;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #a8841d;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 80px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto h2 {
+    font-size: 36px;
+    color: #0b1f3a;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #555;
+}
+
+.sobre img {
+    flex: 1;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+/* ===========================
+   IMÓVEIS EM DESTAQUE
+=========================== */
+
+.imoveis {
+    padding: 80px 8%;
+    background: #f8f8f8;
+}
+
+.imoveis h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1c1c1c;
+    margin-bottom: 15px;
+}
+
+.imoveis p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.cards-imoveis{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card-imovel{
+    background:#ffffff;
+    width:340px;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    transition:
+        transform .3s
+        box-shadow .3s
+}
+
+.card-imovel:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 40px rgba(0,0,0,.20);
+
+}
+
+.card-imovel img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    display:block;
+}
+
+.card-conteudo{
+    padding:22px;
+}
+
+.card-info h3{
+    font-size:24px;
+    color:#243b55;
+    margin-bottom:10px;
+}
+
+.card-info p{
+    color:#666;
+    line-height:1.6;
+}
+
+.preco {
+    font-size:32px;
+    font-weight:bold;
+    color:#c8a15a;
+    margin:18px 0;
+}
+
+.botao-whatsapp{
+    display:block;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    padding:14px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.botao-whatsapp:hover{
+    background:#1da851;
+}
+
+.pagina-imovel{
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 8%;
+}
+
+.pagina-imovel img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:35px;
+}
+
+.info-imovel h2{
+    font-size:2.2rem;
+    margin-bottom:15px;
+}
+
+.info-imovel h3{
+    color:#c89b3c;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+.info-imovel p{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.galeria{
+
+margin-bottom:40px;
+
+}
+
+#fotoPrincipal{
+
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
+
+}
+
+.miniaturas{
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+.miniaturas img{
+
+width:130px;
+height:90px;
+object-fit:cover;
+cursor:pointer;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.miniaturas img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* ==========================
+
+RESPONSIVIDADE
+
+========================== */
+
+@media (max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    text-align:center;
+
+}
+
+nav a{
+
+    margin-left:0;
+
+}
+
+.hero{
+
+    padding:80px 20px;
+
+}
+
+.hero h2{
+
+    font-size:34px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+}
+
+.banner{
+
+    height:auto;
+
+    padding:80px 20px;
+
+}
+
+.banner-texto h2{
+
+    font-size:30px;
+
+}
+
+.banner-texto p{
+
+    font-size:18px;
+
+}
+
+.sobre{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.cards{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.card-imovel{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+.logo h1{
+
+    font-size:40px;
+
+}
+
+}
